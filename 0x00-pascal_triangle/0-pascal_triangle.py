@@ -1,4 +1,16 @@
+#!/usr/bin/python3
+"""
+0-pascal_triangle
+"""
 def pascal_triangle(n: int):
+    """Returns the Pascal Triangle
+
+    Args:
+        n (int): The length of the triangle
+
+    Returns:
+        list: A list of lists
+    """
     triangle = []
     if n > 0:
         for i in range(n):
