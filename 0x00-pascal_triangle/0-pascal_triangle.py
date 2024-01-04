@@ -2,6 +2,8 @@
 """
 0-pascal_triangle
 """
+
+
 def pascal_triangle(n: int):
     """Returns the Pascal Triangle
 
@@ -17,7 +19,7 @@ def pascal_triangle(n: int):
             if i == 0:
                 triangle.append([1])
             elif i == 1:
-                triangle.append([1,1])
+                triangle.append([1, 1])
             else:
                 prev_array = triangle[-1]
                 triangle.append([1])
