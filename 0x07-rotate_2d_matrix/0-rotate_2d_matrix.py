@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""2D Matrix Rotation module.
+"""
 
 def rotate_2d_matrix(matrix):
     """Rotates the 2D matrix given by 90 degrees
