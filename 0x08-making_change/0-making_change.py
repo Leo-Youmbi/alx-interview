@@ -27,9 +27,7 @@ def makeChange(coins: List[int], total: int) -> int:
     coins = sorted(coins, reverse=True)
     result = 0
     for coin in coins:
-        if coin == 0:
-            continue
-        if total == 0:
+        if total == 0 or coin == 0:
             break
         while total >= coin:
             total -= coin
