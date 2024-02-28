@@ -23,12 +23,14 @@ def makeChange(coins: List[int], total: int) -> int:
     """
     if total == 0 or len(coins) == 0:
         return 0
-    coins = bubbleSort(coins)
-    print(coins)
+    # coins = bubbleSort(coins)
+    coins = sorted(coins, reverse=True)
     result = 0
     for coin in coins:
         if coin == 0:
             continue
+        if total == 0:
+            break
         while total >= coin:
             total -= coin
             result += 1
