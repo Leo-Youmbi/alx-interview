@@ -21,7 +21,7 @@ def makeChange(coins: List[int], total: int) -> int:
     """Determines the fewest number of coins needed to meet a given
     amount total when given a pile of coins of different values.
     """
-    if total == 0 or len(coins) == 0:
+    if total <= 0:
         return 0
     # coins = bubbleSort(coins)
     coins = sorted(coins, reverse=True)
